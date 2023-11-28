@@ -1,0 +1,90 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+class student{
+    
+    string name;
+    int roll_no;
+    string branch;
+    float fee;
+    
+    public:
+    student(){
+        
+    }
+    student(string name,int roll,string branch)
+    {
+        this->name=name;
+        roll_no=roll;
+        this ->branch=branch;
+    }
+    void getdata()
+    {
+        cin >>name>>roll_no>>branch;
+    }
+    void setdata()
+    {
+        
+    }
+    void print()
+    {
+        
+        
+        cout<<"*************************************"<<endl;
+        cout<<"name = "<<name<<endl;
+        cout<<"roll no = "<<roll_no<<endl;;
+        cout<<"branch = "<<branch<<endl;
+    }
+    
+};
+
+int main()
+{   
+  int n;
+  cout<<"enter no. of students"<<endl;
+cin>>n;
+
+  student s[70];
+ for(int i =0;i<n;i++)
+ {
+    s[i].getdata();
+ }
+  
+ for(int i =0;i<n;i++)
+ {
+    s[i].print();
+ }
+ 
+ 
+ 
+// student vishesh("vishesh",72,"IT");
+// vishesh.print();
+// string name;
+// int roll_no;
+// string branch;
+// // cout<<"enter your name"<<endl;
+// cin>>name>>roll_no>>branch;
+// student s1(name,roll_no,branch);
+// cout<<"enter info of 2nd student"<<endl;
+// cin>>name>>roll_no>>branch;
+
+// student s2(name,roll_no,branch);
+// s1.print();
+// s2.print();
+
+
+
+
+
+    
+
+    return 0;
+}
